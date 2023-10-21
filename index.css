@@ -1,0 +1,169 @@
+/*Marking default margin to zero and setting Background color*/
+*{
+    margin: 0%;
+    background-color: #cad6ebd3;
+}
+
+main{               
+    display: inline-block;                             /* --setting main section style---*/
+    width: 67%;
+    margin: 0%;
+    margin-right: 2%;
+    height: 99vh;
+}
+aside{                                                  /* --setting aside section style---*/
+    display: inline-block;
+    vertical-align: top;
+    /* border: 1px solid blue; */
+    width: 29%;
+    margin: 0%;
+    height: 99vh;
+    border-left:1px dashed #5a5a9e;
+}
+
+#stopwatch-container{                       /*Main is divided into 1.stopwatch-container & 2.btn-container*/
+    margin: auto;
+    margin-top: 13%;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    height: 45%;
+}
+.watch-timer-box{                          /*Three div's where stopwatch value will be render inside these*/ 
+    width: 30%;
+    height: 100%;
+    margin-bottom: 0%;
+}
+h2{
+    font-family: sans-serif;               /*Style to Words 'Hours','Minutes'&'Seconds'*/
+    text-align: center;
+}
+.timer-box{
+    height: 88%;                            /*Elemets where final values of 'Hours','Minutes'&'Seconds' is shown*/
+    width: 100%;
+    border: 1px solid red;
+    background-color: #dbe9ff;
+    border-radius: 1rem;
+    box-shadow: 0 0 6px 6px #a1a1e0;
+    margin-bottom: 10px;
+    /* border-radius: 50%; */
+}
+.timings{
+    text-align: center;                         /*Style to the text of time values*/
+    margin-top: 42%;
+    background-color: #dbe9ff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 5rem;
+}
+.time-separator{                                    /*Style for the ':' value on the stopwatch*/
+    text-align: center;
+    margin-top: 15%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3rem;
+}
+#btn-container{                                    /*Main is divided into 1.stopwatch-container & 2.btn-container*/
+    width: 70%;
+    margin: auto;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.6rem;
+}
+.btn-class{
+    height: 3rem;                                  /*Styling for the buttons*/
+    width: 6rem;
+    border-radius: 0.5rem;
+    padding: 1%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #5a5a9e;
+    color: white;
+}
+.btn-class:hover{
+    background-color: #a1a1e0;
+    box-shadow: 0 0 6px 4px rgba(215, 121, 13, 0.3);
+}
+
+/* ------------------------------------------------aside-section-------------------------------------------------- */
+#notes-img img{
+    height: 3rem;
+    width: 3rem;
+}
+#notes-img h2{
+    display: inline;
+    font-family: cursive;
+    font-size: 2.5rem;
+}
+#notes-img{
+    margin-top: 2rem;
+}
+#aside-title{
+    text-align: left;
+    font-family: cursive;
+    display: inline-block;
+    font-size: 2rem;
+}
+.record-btn{
+    display: inline;
+}
+
+#record-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.recording-list-div{
+    width: 40%;
+    min-height: 300px;
+}
+.recording-list-div h3{
+    text-align: center;
+    font-family: cursive;
+}
+
+/* -----------------------------------media query code-------------------------------------- */
+@media screen and (max-width:800px) {
+    main{
+        display: block;
+    }
+    aside{
+        display: block;
+        margin-top: 30rem;
+    }
+    #stopwatch-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px;
+    }
+    .watch-timer-box{
+        width: 200px;
+        height: 300px;
+        margin: 20px;
+    }
+    .timings{
+        font-size: 1rem;
+    }
+    #btn-container{
+        margin-top: 170%;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .time-separator{
+        display: none;
+    }
+    #record-div{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #stopwatch-container{
+        position: relative;
+    }
+    #btn-container{
+        position: absolute;
+        /* top: 0%; */
+        /* right: 0%; */
+    }
+}

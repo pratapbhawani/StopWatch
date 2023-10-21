@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./photos/chronometer.png">
+    <title>StopWatch</title>
+</head>
+<body>
+    <!----Main is divided into 1.stopwatch-container & 2.btn-container-- -->
+    <main>
+        <div id="stopwatch-container">                          <!--Stopwatch-Container-->
+            <div class="watch-timer-box">
+                <div id="hour-box" class="timer-box">
+                    <h1 class="timings" id="hour">
+                        00
+                    </h1>
+                </div>
+                <h2>Hours</h2>
+            </div>
+            <h1 class="time-separator">:</h1>
+            <div class="watch-timer-box">
+                <div id="minutes-box" class="timer-box">
+                    <h1 class="timings" id="minute">00</h1>
+                </div>
+                <h2>Minutes</h2>
+            </div>
+            <h1 class="time-separator">:</h1>
+            <div class="watch-timer-box">
+                <div id="seconds-box" class="timer-box">
+                    <h1 class="timings" id="second">00</h1>
+                </div>
+                <h2>Seconds</h2>
+            </div>
+        </div>
+        <div id="btn-container">                                            <!--btn-container-->
+            <button class="btn-class">Start</button>
+            <button class="btn-class">Stop</button>
+            <button class="btn-class">Reset</button>
+        </div>
+    </main>
+
+    <!-- -----------------------------------Aside-Section for recording the times---------------------------- -->
+    <aside>
+        <div id="notes-img">
+            <img src="./photos/notes.png" alt="notepad-image">
+            <h2>Notes</h2>
+        </div>
+        <h2 id="aside-title">Record Times :</h2>
+        <button class="btn-class record-btn">Save</button>
+        <div id="record-div">
+            <div class="recording-list-div">
+                <h3>StopWatchTime</h3>
+                <ul id="record-time-list">
+            
+                </ul>
+            </div>
+            <div class="recording-list-div">
+                <h3>Record Date</h3>
+                <ul id="record-date-list">
+            
+                </ul>
+            </div>
+            <div class="recording-list-div">
+                <h3>Current Time</h3>
+                <ul id="current-time-list">
+            
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+    <script src="./index.js"></script>
+</body>
+</html>
